@@ -18,12 +18,7 @@ def create_connection(db_file):
 
 
 def create_project(conn, project):
-    """
-    Create a new project into the projects table
-    :param conn:
-    :param project:
-    :return: project id
-    """
+
     sql = ''' INSERT INTO Students(National_Number,name,address,age,course,phone,email)
               VALUES(?,?,?,?,?,?,?) '''
     cur = conn.cursor()
